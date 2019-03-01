@@ -1,0 +1,60 @@
+{
+	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+
+	"main_void": {
+		"prefix": "main(void)",
+		"body":[
+			"int\tmain(void)",
+			"{",
+			"\t$0",
+			"\treturn(1);",
+			"}"
+		]
+	},
+
+	"main_args":{
+		"prefix": "main(args)",
+		"body":[
+			"int\tmain(int aa, char **args)",
+			"{",
+			"\t$0",
+			"\treturn(1);",
+			"}"
+		]
+	},
+
+	"NULL_":{
+		"prefix": "NULL_CHECK",
+		"body": [
+			"NULL_CHECK(${1:x});",
+			"${2:}"
+		]
+	},
+
+	"NULL_INT":{
+		"prefix": "NULL_CHECK_INT",
+		"body": [
+			"NULL_CHECK_INT(${1:x});",
+			"${2:}"
+		]
+	},
+
+	"NULL_CHAR":{
+		"prefix": "NULL_CHECK_CHAR",
+		"body": [
+			"NULL_CHECK_CHAR(${1:x});",
+			"${2:}"
+		]
+	},
+
+	"malloc": {
+		"prefix": "malloc",
+		"body": [
+			"malloc(sizeof(${1|*result,*str|}) * (${2| + 1,}));",
+			"${3:}"
+		]
+	}
+}
