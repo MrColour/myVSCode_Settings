@@ -76,4 +76,14 @@
 			"printf(\"%s\\n\", ${1:char *});"
 		]
 	},
+	
+	"include read":
+	{
+		"prefix": "include_write",
+		"body": [
+			"#include <sys/types.h>",
+			"#include <sys/uio.h>",
+			"#include <unistd.h>"
+		]
+	}
 }
