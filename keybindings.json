@@ -1,0 +1,47 @@
+[
+	{
+		"key": "cmd+numpad4",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "editorHasSelection"
+	},
+	{
+		"key": "cmd+numpad6",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "editorHasSelection"
+	},
+	{
+		"key": "cmd+numpad4",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "editorHasMultipleSelection"
+	},
+	{
+		"key": "cmd+numpad6",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "editorHasMultipleSelection"
+	},
+	// MOVE CARRET
+	{
+		"key": "alt+left",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "editorHasSelection"
+	},
+	{
+		"key": "alt+right",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "editorHasSelection"
+	},
+	{
+		"key": "alt+left",
+		"command": "editor.action.moveCarretLeftAction",
+		"when": "editorHasMultipleSelection"
+	},
+	{
+		"key": "alt+right",
+		"command": "editor.action.moveCarretRightAction",
+		"when": "editorHasMultipleSelection"
+	},
+	{
+		"key": "cmd+numpad_multiply",
+		"command": "workbench.action.togglePanelPosition"
+	}
+]
