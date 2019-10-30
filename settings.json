@@ -1,7 +1,5 @@
 {
-	"files.associations": {
-		"*.h": "c",
-	},
+	"editor.renderFinalNewline": false,
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.renderWhitespace": "all",
@@ -10,46 +8,37 @@
 	//"python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
 	"workbench.colorTheme": "Visual Studio Dark",
 	"workbench.colorCustomizations": {
-
 		"activityBar.foreground": "#ffffff",
 		"activityBar.background": "#000000",
 		"activityBarBadge.background": "#3cfff5e1",
 		"activityBarBadge.foreground": "#000000",
-
 		"sideBar.background": "#141414",
 		"sideBar.foreground": "#dddddd",
 		"sideBarTitle.foreground": "#ffffff",
 		"sideBarSectionHeader.background": "#2e2e2e",
 		"sideBarSectionHeader.foreground": "#ffffff",
-
 		"editorGroup.border": "#ffffffa1",
 		"editorGroupHeader.tabsBackground": "#2e2e2e",
 		"editorGroupHeader.tabsBorder": "#ffffffa1",
-
 		"tab.activeBackground": "#464646",
-
 		"editor.foreground": "#ffffff",
 		"editor.background": "#1b1b1b",
 		"editorLineNumber.foreground": "#ffffffb6",
 		"editorLineNumber.activeForeground": "#43fda0",
 		"editorCursor.foreground": "#43fda0",
-
 		"editor.selectionBackground": "#7c98b862",
 		"editor.selectionHighlightBackground": "#8d35ffa2",
 		"editorOverviewRuler.selectionHighlightForeground": "#8d35ffa2",
-		"editorBracketMatch.background":"#d243fd52",
+		"editorBracketMatch.background": "#d243fd52",
 		"editorBracketMatch.border": "#00e1ff7c",
 		"editorOverviewRuler.bracketMatchForeground": "#af73fdb2",
-
 		"editorError.foreground": "#ff0000",
 		"editorWarning.foreground": "#ffbb00",
-
 		"focusBorder": "#ffffff8e",
 		"foreground": "#a1a1a1",
 		"selection.background": "#3a3a3a69",
 		"errorForeground": "#ff0000",
 		"contrastBorder": "#9c9c9c",
-
 		"terminal.ansiBlack": "#2e3436",
 		"terminal.ansiBlue": "#3465a4",
 		"terminal.ansiBrightBlack": "#555753",
@@ -68,7 +57,6 @@
 		"terminal.ansiYellow": "#00ffdd",
 		"terminal.foreground": "#ffffff"
 	},
-
 	"editor.tokenColorCustomizations": {
 		"comments": "#6b6b6b",
 		"variables": "#6ae1ff",
@@ -76,12 +64,21 @@
 		"keywords": "#d400ff",
 		"functions": "#ff30b0",
 		"strings": "#94e4c5",
-		"types": "#00ffea"
+		"types": "#d400ff"
 	},
-
 	"workbench.activityBar.visible": true,
 	"editor.minimap.enabled": false,
 	"explorer.confirmDelete": false,
-	"workbench.panel.defaultLocation": "right",
+	"workbench.sideBar.location": "left",
+	"editor.showFoldingControls": "always",
+	"editor.foldingStrategy": "indentation",
+	"editor.autoIndent": false,
+	"editor.detectIndentation": false,
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.fontSize": 10,
+	"terminal.integrated.letterSpacing": 1,
+	"terminal.integrated.scrollback": 2000,
 	//"window.menuBarVisibility": "default"
 }
