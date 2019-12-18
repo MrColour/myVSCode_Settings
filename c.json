@@ -5,7 +5,7 @@
 			"int\tmain(void)",
 			"{",
 			"\t$0",
-			"\treturn(0);",
+			"\treturn (0);",
 			"}"
 		]
 	},
@@ -16,7 +16,7 @@
 			"int\tmain(int aa, char **args)",
 			"{",
 			"\t$0",
-			"\treturn(0);",
+			"\treturn (0);",
 			"}"
 		]
 	},
@@ -30,7 +30,7 @@
 			"\t\t$0",
 			"\telse",
 			"\t\tprintf(\"Not enough arguements\\n\");",
-			"\treturn(0);",
+			"\treturn (0);",
 			"}"
 		]
 	},
@@ -62,12 +62,12 @@
 	"malloc": {
 		"prefix": "malloc",
 		"body": [
-			"malloc(sizeof(${1|*result,*str|}) * (${2| + 1,}));",
+			"malloc(sizeof(${1|*result,*str|}) * (${2:}));",
 			"${3:}"
 		]
 	},
 
-		"printf_int":
+	"printf_int":
 	{
 		"prefix": "printf_int",
 		"body": [
@@ -109,6 +109,14 @@
 		]
 	},
 
+	"include NULL":
+	{
+		"prefix": "include_null",
+		"body": [
+			"#include <stddef.h>"
+		]
+	},
+
 	"include string":
 	{
 		"prefix": "include_string",
@@ -130,6 +138,22 @@
 		"prefix": "include_stdlib",
 		"body": [
 			"#include <stdlib.h>"
+		]
+	},
+
+	"include stdbool":
+	{
+		"prefix": "include_stdbool",
+		"body": [
+			"#include <stdbool.h>"
+		]
+	},
+
+	"include math":
+	{
+		"prefix": "include_math",
+		"body": [
+			"#include <math.h>"
 		]
 	}
 }
