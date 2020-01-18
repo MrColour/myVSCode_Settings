@@ -5,6 +5,9 @@
 	"editor.renderWhitespace": "all",
 	"files.trimTrailingWhitespace": true,
 	"files.insertFinalNewline": true,
+	"files.associations": {
+		"*.h": "c",
+	},
 	//"python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
 	"workbench.colorTheme": "Visual Studio Dark",
 	"workbench.colorCustomizations": {
