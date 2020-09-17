@@ -1,10 +1,8 @@
 {
-	"editor.renderFinalNewline": false,
 	"editor.tabSize": 4,
 	"editor.insertSpaces": false,
 	"editor.renderWhitespace": "all",
 	"files.trimTrailingWhitespace": true,
-	"files.insertFinalNewline": true,
 	"files.associations": {
 		"*.h": "c",
 	},
@@ -69,7 +67,7 @@
 		"strings": "#94e4c5",
 		"types": "#d400ff"
 	},
-	"workbench.activityBar.visible": true,
+	"workbench.activityBar.visible": false,
 	"editor.minimap.enabled": false,
 	"explorer.confirmDelete": false,
 	"workbench.sideBar.location": "left",
@@ -83,5 +81,43 @@
 	"terminal.integrated.fontSize": 10,
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 2000,
+	"C_Cpp.updateChannel": "Insiders",
+	"workbench.editor.enablePreview": false,
+	"window.zoomLevel": -1,
+	"cSpell.userWords": [
+		"REPOLARIZATION",
+		"abelian",
+		"clade",
+		"parallelization",
+		"pthreads",
+		"rasterisation",
+		"unviable"
+	],
+	"C_Cpp.default.includePath": [
+		"~/.brew/include/**"
+	],
+
+	"todo-tree.tree.showScanModeButton": false,
+
+	"todo-tree.general.tagGroups": {
+	},
+
+	"todo-tree.highlights.defaultHighlight": {
+		"icon": "alert",
+		"type": "text",
+		"foreground": "yellow",
+		"background": "#6f00ff",
+		"opacity": 60,
+		"iconColour": "yellow"
+	},
+	"todo-tree.general.tags":[
+		"BUG",
+		"NOTE",
+		"HACK",
+		"FIXME",
+		"TODO",
+		"XXX"
+	],
+	"terminal.integrated.shell.osx": "/bin/bash",
 	//"window.menuBarVisibility": "default"
 }
