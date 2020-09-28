@@ -262,5 +262,22 @@
 		"body": [
 			"char\thash[256] = { 0 };"
 		]
+	},
+
+	"CMP func":
+	{
+		"prefix": "cmp_function",
+		"body": [
+			"int\t\t$1_cmp(const void *ptr_a, const void *ptr_b)",
+			"{",
+			"\t${_type} *a;",
+			"\t${_type} *b;",
+			"",
+			"\ta = *(${_type} **)ptr_a;",
+			"\tb = *(${_type} **)ptr_b;",
+			"",
+			"\t${3|return (1);,if ()\n\treturn(1);\nelse\n\treturn(-1);|}",
+			"}"
+		]
 	}
 }
