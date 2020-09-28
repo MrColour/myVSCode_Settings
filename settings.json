@@ -83,5 +83,19 @@
 	"terminal.integrated.fontSize": 10,
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 2000,
+	"C_Cpp.updateChannel": "Insiders",
+	"workbench.editor.enablePreview": false,
+	"window.zoomLevel": -1,
+	"cSpell.userWords": [
+		"abelian",
+		"parallelization",
+		"pthreads",
+		"rasterisation"
+	],
+	"C_Cpp.default.includePath": [
+		"~/.brew/include/**"
+	],
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.snippetSuggestions": "top",
 	//"window.menuBarVisibility": "default"
 }
