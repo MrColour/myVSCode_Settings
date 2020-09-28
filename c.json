@@ -2,7 +2,7 @@
 	"main_void": {
 		"prefix": "main(void)",
 		"body":[
-			"int\tmain(void)",
+			"main(void)",
 			"{",
 			"\t$0",
 			"\treturn (0);",
@@ -13,7 +13,7 @@
 	"main_args":{
 		"prefix": "main(args)",
 		"body":[
-			"int\tmain(int aa, char **args)",
+			"main(int aa, char **args)",
 			"{",
 			"\t$0",
 			"\treturn (0);",
@@ -24,7 +24,7 @@
 	"main_args_1": {
 		"prefix": "main(1)",
 		"body":[
-			"int\tmain(int aa, char **args)",
+			"main(int aa, char **args)",
 			"{",
 			"\tif (aa == 2)",
 			"\t\t$0",
@@ -64,6 +64,13 @@
 		"body": [
 			"malloc(sizeof(${1|*result,*str|}) * (${2:}));",
 			"${3:}"
+		]
+	},
+
+	"calloc": {
+		"prefix": "calloc",
+		"body": [
+			"${name} = calloc(${1|amount,i,size|}, sizeof(*${name}));"
 		]
 	},
 
@@ -155,6 +162,105 @@
 		"body": [
 			"#include <math.h>"
 		]
+	},
+
+	"header ifndef":
+	{
+		"prefix": "#ifndef",
+		"body": [
+			"#ifndef ${1:file}_H",
+			"# define ${1:file}_H",
+			"",
+			"#endif"
+		]
+	},
+
+	"Struct typedef":
+	{
+		"prefix": "typedef struct",
+		"body": [
+			"typedef struct\ts_${1:name}",
+			"{",
+			"",
+			"}\t\t\t\tt_${1:name};"
+		]
+	},
+
+
+	"Advent of Code":
+	{
+		"prefix": "aoc.h",
+		"body": [
+			"#include \"../aoc++.h\"",
+			""
+		]
+	},
+
+	"main_aoc":
+	{
+		"prefix": "main AoC",
+		"body":[
+			"main(void)",
+			"{",
+			"\tchar\t*str_file;",
+			"",
+			"\tstr_file = extract_file(\"input.txt\");",
+			"\t$1",
+			"\treturn (0);",
+			"}\n"
+		]
+	},
+
+	"AoC":
+	{
+		"prefix": "AoC",
+		"body": [
+			"#include \"../aoc++.h\"",
+			"",
+			"int\t\tmain(void)",
+			"{",
+			"\tchar\t*str_file;",
+			"",
+			"\tstr_file = extract_file(\"input.txt\");",
+			"\t$1",
+			"\treturn (0);",
+			"}\n"
+		]
+	},
+
+	"Print":
+	{
+		"prefix": ["printf"],
+		"body": [
+			"printf(\"${1|RESULT: %d,INT: %d,STR: %s,CHAR: %c|}\\n\", ${2|i,result,str,str[i]|});"
+		]
+	},
+
+	"Str Token":
+	{
+		"prefix": ["s_tok", "str_tok"],
+		"body": [
+			"${1|s_tok,str_tok,str|} = strtok(${2|NULL,str_file,s_tok,str|}, ${3|\"\\n\",\" \",\",\"|});"
+		]
+	},
+
+	"While":
+	{
+		"prefix": "while",
+		"body": [
+			"while (${1|i < size,str[i] != '\\0',s_tok != NULL|}$2)",
+			"{",
+			"",
+			"\t${3|i++,s_tok = strtok(NULL)|};",
+			"}"
+		]
+	},
+
+	"Char Hash Table":
+	{
+		"prefix": "hash",
+		"body": [
+			"char\thash[256] = { 0 };"
+		]
 	}
 }
-
