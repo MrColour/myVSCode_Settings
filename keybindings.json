@@ -59,5 +59,15 @@
 	{
 		"key": "ctrl+l",
 		"command": "editor.action.transformToLowercase"
+	},
+	{
+		"key": "cmd+left",
+		"command": "explorer.openAndPassFocus",
+		"when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+	},
+	{
+		"key": "cmd+right",
+		"command": "explorer.openToSide",
+		"when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
 	}
 ]
