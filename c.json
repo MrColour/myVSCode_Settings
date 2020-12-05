@@ -279,5 +279,25 @@
 			"\t${3|return (1);,if ()\n\treturn(1);\nelse\n\treturn(-1);|}",
 			"}"
 		]
+	},
+	"Matrix 3x3":
+	{
+		"prefix": "matrix 3x3",
+		"body": [
+			"${name}[${row} - 1][${col} - 1]  ${name}[${row} - 1][${col} + 0]  ${name}[${row} - 1][${col} + 1]\n",
+			"${name}[${row} + 0][${col} - 1]  ${name}[${row} + 0][${col} + 0]  ${name}[${row} + 0][${col} + 1]\n",
+			"${name}[${row} + 1][${col} - 1]  ${name}[${row} + 1][${col} + 0]  ${name}[${row} + 1][${col} + 1]\n"
+		]
+	},
+	"Matrix 2x2":
+	{
+		"prefix": "matrix 2x2",
+		"body": [
+			"${name}[${row} - 1][${col} + 0]\n",
+			"${name}[${row} + 1][${col} + 0]\n",
+			"${name}[${row} + 0][${col} - 1]\n",
+			"${name}[${row} + 0][${col} + 1]\n"
+		]
 	}
 }
+

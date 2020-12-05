@@ -5,6 +5,7 @@
 	"files.trimTrailingWhitespace": true,
 	"files.associations": {
 		"*.h": "c",
+		"*.mix": "c"
 	},
 	//"python.pythonPath": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Python36_64\\python.exe",
 	"workbench.colorTheme": "Visual Studio Dark",
@@ -67,18 +68,15 @@
 		"strings": "#94e4c5",
 		"types": "#d400ff"
 	},
-	"workbench.activityBar.visible": false,
+	"workbench.activityBar.visible": true,
 	"editor.minimap.enabled": false,
 	"explorer.confirmDelete": false,
 	"workbench.sideBar.location": "left",
 	"editor.showFoldingControls": "always",
-	"editor.foldingStrategy": "indentation",
-	"editor.autoIndent": false,
 	"editor.detectIndentation": false,
 	"editor.suggestSelection": "first",
 	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 	"terminal.integrated.cursorStyle": "line",
-	"terminal.integrated.fontSize": 10,
 	"terminal.integrated.letterSpacing": 1,
 	"terminal.integrated.scrollback": 2000,
 	"C_Cpp.updateChannel": "Insiders",
@@ -88,6 +86,7 @@
 		"REPOLARIZATION",
 		"abelian",
 		"clade",
+		"nums",
 		"parallelization",
 		"pthreads",
 		"rasterisation",
@@ -119,5 +118,54 @@
 		"XXX"
 	],
 	"terminal.integrated.shell.osx": "/bin/bash",
+	"editor.fontSize": 14,
+	"terminal.integrated.fontWeightBold": "normal",
+	"terminal.external.linuxExec": "iterm",
+	"terminal.external.osxExec": "iTerm.app",
+	"workbench.fontAliasing": "auto",
+	"C_Cpp.default.intelliSenseMode": "clang-x86",
+	"editor.quickSuggestionsDelay": 7,
+	"editor.suggest.localityBonus": true,
+	"editor.tabCompletion": "off",
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"C_Cpp.suggestSnippets": false,
+	"editor.acceptSuggestionOnEnter": "smart",
+	"editor.accessibilitySupport": "on",
+	"psi-header.variables": [
+
+	],
+	"psi-header.config": {
+		"forceToTop": true,
+		"author": "Kevin Colour",
+		"blankLinesAfter": 1,
+		"authorEmail": "kecolour@gmail.com"
+	},
+	"psi-header.lang-config": [
+		{
+			"language": "c",
+			"begin": "/***************************************************************************",
+			"end":   "***************************************************************************/",
+			"prefix": " * ",
+			"lineLength": 80
+		}
+	],
+	"psi-header.templates": [
+		{
+			"language": "c",
+			"template": [
+				"FILENAME:    <<filename>>",
+				"DESCRIPTION:",
+				"    */",
+				"ENVIRONMENT:",
+				"    macOS Cataline 10.15.7",
+				"    Visual Studio Code 1.30",
+				"AUTHORS:",
+				"    <<author>>",
+				"DATES:",
+				"    Created: <<dateformat('DDMMMYYYY')>>"
+			]
+		}
+	]
 	//"window.menuBarVisibility": "default"
 }

@@ -69,5 +69,30 @@
 		"key": "cmd+right",
 		"command": "explorer.openToSide",
 		"when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+	},
+	{
+		"key": "alt+tab alt+left",
+		"command": "editor.fold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "alt+cmd+[",
+		"command": "-editor.fold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "alt+tab alt+right",
+		"command": "editor.unfold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "alt+cmd+]",
+		"command": "-editor.unfold",
+		"when": "editorTextFocus && foldingEnabled"
+	},
+	{
+		"key": "tab",
+		"command": "-acceptSelectedSuggestion",
+		"when": "suggestWidgetVisible && textInputFocus"
 	}
 ]

@@ -1,0 +1,54 @@
+{
+	"aoc_input": {
+		"prefix": "input",
+		"body": [
+			"input = open(\"input.txt\").read()"
+		],
+		"description": "Read the file input.txt for Advent of Code problems."
+	},
+
+	"abc_python": {
+		"prefix": "alpha",
+		"body": [
+			"alpha = [chr(c) for c in range(ord('a'), ord('z') + 1)]"
+		],
+		"description": "Create the alhpabet."
+	},
+
+	"default_dict": {
+		"prefix": "import defaultdict",
+		"body": "from collections import defaultdict",
+		"description": "Imports deaultdict to py file."
+	},
+
+	"directions": {
+		"prefix": "directions",
+		"body": "dirs = {'D': (0, 1), 'U': (0, -1), 'L': (-1, 0), 'R': (1, 0)}",
+		"description": "Return a tuple to be added to x and y based on a direction."
+	},
+
+	"enumerate":{
+		"prefix": "for enumerate",
+		"body": [
+			"for i, item in enumerate(${1}):",
+			"\t"
+		],
+		"description": "Enumerate for loop"
+	},
+
+	"for loop twice":{
+		"prefix": "for x2",
+		"body": [
+			"for i, item in enumerate(${1}):",
+			"\tfor j, item2 in enumerate(${2}):"
+		]
+	},
+
+	"fetch int": {
+		"prefix": "get num",
+		"body": [
+			"ptr = re.findall(r'-?\\d+', ${1})",
+			"nums = list(map(int, ptr))"
+		]
+	}
+}
