@@ -42,7 +42,13 @@
 	},
 	{
 		"key": "cmd+numpad_multiply",
-		"command": "workbench.action.togglePanelPosition"
+		"command": "workbench.action.positionPanelBottom",
+		"when": "panelPosition == right"
+	},
+	{
+		"key": "cmd+numpad_multiply",
+		"command": "workbench.action.positionPanelRight",
+		"when": "panelPosition == bottom"
 	},
 	{
 		"key": "shift+cmd+6",
@@ -94,5 +100,6 @@
 		"key": "tab",
 		"command": "-acceptSelectedSuggestion",
 		"when": "suggestWidgetVisible && textInputFocus"
-	}
+	  },
 ]
+
