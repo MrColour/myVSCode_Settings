@@ -100,6 +100,54 @@
 		"key": "tab",
 		"command": "-acceptSelectedSuggestion",
 		"when": "suggestWidgetVisible && textInputFocus"
-	  },
+	},
+	{
+		"key": "alt+shift+[",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "{ ${TM_SELECTED_TEXT} }"
+		}
+	},
+	{
+		"key": "alt+shift+7",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "&(${TM_SELECTED_TEXT})"
+		}
+	},
+	{
+		"key": "alt+shift+8",
+		"command": "editor.action.insertSnippet",
+		"when": "editorTextFocus",
+		"args": {
+			"snippet": "(*${TM_SELECTED_TEXT})"
+		}
+	},
+	{
+		"key": "alt+3",
+		"command": "extension.enumerate",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+cmd+e",
+		"command": "-extension.enumerate",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+r",
+		"command": "randomeverything.int"
+	},
+	{
+		"key": "cmd+n",
+		"command": "explorer.newFile"
+	},
+	{
+		"key": "cmd+w",
+		"command": "workbench.action.terminal.kill",
+		"when": "terminalFocus"
+	},
+
 ]
 

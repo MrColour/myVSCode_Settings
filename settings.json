@@ -81,7 +81,6 @@
 	"terminal.integrated.scrollback": 2000,
 	"C_Cpp.updateChannel": "Insiders",
 	"workbench.editor.enablePreview": false,
-	"window.zoomLevel": -1,
 	"cSpell.userWords": [
 		"REPOLARIZATION",
 		"abelian",
@@ -117,11 +116,8 @@
 		"TODO",
 		"XXX"
 	],
-	"terminal.integrated.shell.osx": "/bin/bash",
 	"editor.fontSize": 14,
 	"terminal.integrated.fontWeightBold": "normal",
-	"terminal.external.linuxExec": "iterm",
-	"terminal.external.osxExec": "iTerm.app",
 	"workbench.fontAliasing": "auto",
 	"C_Cpp.default.intelliSenseMode": "clang-x86",
 	"editor.quickSuggestionsDelay": 7,
@@ -147,7 +143,7 @@
 			"begin": "/***************************************************************************",
 			"end":   "***************************************************************************/",
 			"prefix": " * ",
-			"lineLength": 80
+			"lineLength": 80,
 		}
 	],
 	"psi-header.templates": [
@@ -158,14 +154,42 @@
 				"DESCRIPTION:",
 				"    */",
 				"ENVIRONMENT:",
-				"    macOS Cataline 10.15.7",
-				"    Visual Studio Code 1.30",
+				"    macOS Catalina 10.15.7",
+				"    Visual Studio Code 1.56.2",
 				"AUTHORS:",
 				"    <<author>>",
 				"DATES:",
 				"    Created: <<dateformat('DDMMMYYYY')>>"
 			]
 		}
-	]
+	],
+	"terminal.integrated.rendererType": "dom",
+	"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltdLFwiZm9ybWF0V2lkdGhcIjpcIjI0MFwiLFwiY3JlYXRlVGFyZ2V0XCI6ZmFsc2UsXCJwYWdlRm9ybWF0XCI6e1wieFwiOjAsXCJ5XCI6MCxcIndpZHRoXCI6MTEwMCxcImhlaWdodFwiOjg1MH0sXCJzZWFyY2hcIjp0cnVlLFwic2hvd1N0YXJ0U2NyZWVuXCI6dHJ1ZSxcImdyaWRDb2xvclwiOlwiI2QwZDBkMFwiLFwiZGFya0dyaWRDb2xvclwiOlwiIzZlNmU2ZVwiLFwiYXV0b3NhdmVcIjp0cnVlLFwicmVzaXplSW1hZ2VzXCI6bnVsbCxcIm9wZW5Db3VudGVyXCI6MCxcInZlcnNpb25cIjoxOCxcInVuaXRcIjoxLFwiaXNSdWxlck9uXCI6ZmFsc2UsXCJ1aVwiOlwiXCJ9In0=",
+	"workbench.editorAssociations": {
+		"*.ipynb": "jupyter.notebook.ipynb"
+	},
+	"gitlens.hovers.currentLine.over": "line",
+	"gitlens.codeLens.enabled": false,
+	"editor.renderLineHighlight": "none",
+	"terminal.integrated.gpuAcceleration": "on",
+	"terminal.integrated.defaultProfile.osx": "bash",
+	"terminal.integrated.profiles.osx": {
+		"zsh (migrated)": {
+			"path": "bash",
+			"args": [
+				"-l"
+			]
+		}
+	},
+	"html.preview.scrollPreviewWithEditor": false,
+	"html.preview.scrollEditorWithPreview": false,
+	"editor.inlineSuggest.enabled": true,
+	"github.copilot.enable": {
+		"*": true,
+		"yaml": false,
+		"plaintext": true,
+		"markdown": false
+	},
+	"window.zoomLevel": -1,
 	//"window.menuBarVisibility": "default"
 }

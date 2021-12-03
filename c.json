@@ -298,6 +298,32 @@
 			"${name}[${row} + 0][${col} - 1]\n",
 			"${name}[${row} + 0][${col} + 1]\n"
 		]
+	},
+
+	"Invisible Operation":
+	{
+		"prefix": "Symbol",
+		"body":
+		[
+			"︌︍(\"$1\")"
+		]
+	},
+
+	"Unused parameter":
+	{
+		"prefix": ["Unused", "attribute"],
+		"body": "__attribute__((__unused__))"
+	},
+
+	"New Wave":
+	{
+		"prefix": ["wave", "level"],
+		"body": [
+			"level_${level}.waves[${arr_no}] = (t_wave){0, WAVE_PREV_DEFEAT, 0, SDL_FALSE, SDL_FALSE, 0, SDL_FALSE, NULL};",
+			"level_${level}.waves[${arr_no}].wave_array = SDL_malloc(sizeof(*(level_${level}.waves[${arr_no}].wave_array)) * level_${level}.waves[${arr_no}].size);",
+			"",
+			"level_${level}.waves[${arr_no}].wave_array[0] = (t_wave_elem){E_SLIME_BLUE,  0, 0, SDL_TRUE, {0, 0}, 0};"
+		]
 	}
 }
 
