@@ -38,7 +38,7 @@
 		"editorWarning.foreground": "#ffbb00",
 		"focusBorder": "#ffffff8e",
 		"foreground": "#a1a1a1",
-		"selection.background": "#3a3a3a69",
+		"selection.background": "#5fecee42",
 		"errorForeground": "#ff0000",
 		"contrastBorder": "#9c9c9c",
 		"terminal.ansiBlack": "#2e3436",
